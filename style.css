@@ -128,3 +128,37 @@ a:hover {
   gap: 10px;
   flex-wrap: wrap;
 }
+
+.carousel-img img {
+  width: 625px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.carousel-img {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel-button {
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
